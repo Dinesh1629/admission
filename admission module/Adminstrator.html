@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Custom Stylesheet -->
+    <link href="./plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+         <div class="nav-header" >
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
+                    <span class="logo-compact"></span>
+                    <span class="brand-title">
+                        <b><p>Sasurie Institutions</p></b>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+            <style type="text/css">
+    .brand-logo{
+        background-color: white;
+    }
+</style>
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                       
+                        <input type="search" class="form-control" placeholder=" Search by Admission Id" aria-label="Search Dashboard">
+                        <div class="drop-down animated flipInX d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+               
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
+                                            </a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Adminstrator</li>
+                    
+                    <li>
+                        <a href="visitor.html" aria-expanded="false">
+                            <i class="fa fa-user-o menu-icon"></i><span class="nav-text">Admission Module</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="visitor.html" aria-expanded="false">
+                            <i class="fa fa-long-arrow-left menu-icon"></i><span class="nav-text">Back</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body" style="min-height:1px ;">
+
+           <div class="row page-titles mx-0">
+                <!--<div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>-->
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Admission History</h4>                                
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead>
+                                            <tr>
+                                               <th>Admission Id</th>                                                
+                                                <th>Course</th>
+                                                <th>Branch</th>
+                                                <th>Year</th>
+                                                <th>Name of the student</th>
+                                                <th>Mobile Number</th>                                               
+                                                <th>Highest Qualification</th>
+                                                <th>School name with Address</th>
+                                                <th>College Name with Address</th>                                               
+                                                <th>Referral Name</th>
+                                                <th>Referral Contact</th>
+                                                <th>Referral Mode</th>
+                                                <th>Application date</th>
+                                                <th>certificates Received</th>
+                                                <th>edit</th>
+                                                <th>Fees</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                              <td>Admission Id</td>                                              
+                                                <td>Course</td>
+                                                <td>Branch</td>
+                                                <td>Year</td>
+                                                <td>Name of the student</td>
+                                                <td>Mobile Number</td>
+                                                <td>SSLC Mark</td>
+                                                <td>Shelter Type</td>
+                                                <td>Native Place</td>
+                                                <td>Highest Qualification</td>
+                                                <td>Exam Reg NO</td>
+                                                <td>School name with Address</td>                                              
+                                                <td>Referral Name</td>
+                                                <td>Referral Contact</td>
+                                                <td>Referral Mode</td>
+                                                <td>Application date</td>
+                                                
+                                                  <td>
+                                                     <div class="button-icon">
+                                                             <a href="adminstratoredit.html"><button type="button" class="btn btn-primary btn-xs">Edit <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button> </a>                                                             
+                                                          </div>
+                                              </td>
+                                              <td>
+                                                 <div class="button-icon">
+                                                            <a href="fee.html"> <button type="button" class="btn btn-primary btn-xs">fees <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button>     </a>                                                       
+                                                          </div>
+                                              </td>
+                                            </tr>
+                                              <tr>
+                                              <td>Admission Id</td>                                              
+                                                <td>Course</td>
+                                                <td>Branch</td>
+                                                <td>Year</td>
+                                                <td>Name of the student</td>
+                                                <td>Mobile Number</td>
+                                                <td>SSLC Mark</td>
+                                                <td>Shelter Type</td>
+                                                <td>Native Place</td>
+                                                <td>Highest Qualification</td>
+                                                <td>Exam Reg NO</td>
+                                                <td>School name with Address</td>                                              
+                                                <td>Referral Name</td>
+                                                <td>Referral Contact</td>
+                                                <td>Referral Mode</td>
+                                                <td>Application date</td>
+                                                
+                                                <td>
+                                                     <div class="button-icon">
+                                                             <a href="adminstratoredit.html"><button type="button" class="btn btn-primary btn-xs">Edit <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button> </a>                                                             
+                                                          </div>
+                                              </td>
+                                              <td>
+                                                 <div class="button-icon">
+                                                            <a href="fee.html"> <button type="button" class="btn btn-primary btn-xs">fees <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button>     </a>                                                         
+                                                          </div>
+                                              </td>
+                                            </tr>
+                                              <tr>
+                                              <td>Admission Id</td>                                              
+                                                <td>Course</td>
+                                                <td>Branch</td>
+                                                <td>Year</td>
+                                                <td>Name of the student</td>
+                                                <td>Mobile Number</td>
+                                                <td>SSLC Mark</td>
+                                                <td>Shelter Type</td>
+                                                <td>Native Place</td>
+                                                <td>Highest Qualification</td>
+                                                <td>Exam Reg NO</td>
+                                                <td>School name with Address</td>                                              
+                                                <td>Referral Name</td>
+                                                <td>Referral Contact</td>
+                                                <td>Referral Mode</td>
+                                                <td>Application date</td>
+                                                
+                                                  <td>
+                                                     <div class="button-icon">
+                                                             <a href="adminstratoredit.html"><button type="button" class="btn btn-primary btn-xs">Edit <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button> </a>                                                             
+                                                          </div>
+                                              </td>
+                                              <td>
+                                                 <div class="button-icon">
+                                                            <a href="fee.html"> <button type="button" class="btn btn-primary btn-xs">fees <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button>     </a>                                                         
+                                                          </div>
+                                              </td>
+                                            </tr>
+                                              <tr>
+                                              <td>Admission Id</td>                                              
+                                                <td>Course</td>
+                                                <td>Branch</td>
+                                                <td>Year</td>
+                                                <td>Name of the student</td>
+                                                <td>Mobile Number</td>
+                                                <td>SSLC Mark</td>
+                                                <td>Shelter Type</td>
+                                                <td>Native Place</td>
+                                                <td>Highest Qualification</td>
+                                                <td>Exam Reg NO</td>
+                                                <td>School name with Address</td>                                              
+                                                <td>Referral Name</td>
+                                                <td>Referral Contact</td>
+                                                <td>Referral Mode</td>
+                                                <td>Application date</td>
+                                                
+                                                 <td>
+                                                     <div class="button-icon">
+                                                             <a href="adminstratoredit.html"><button type="button" class="btn btn-primary btn-xs">Edit <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button> </a>                                                             
+                                                          </div>
+                                              </td>
+                                              <td>
+                                                 <div class="button-icon">
+                                                            <a href="fee.html"> <button type="button" class="btn btn-primary btn-xs">fees <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button>     </a>                                                        
+                                                          </div>
+                                              </td>
+                                            </tr>
+                                              <tr>
+                                              <td>Admission Id</td>                                              
+                                                <td>Course</td>
+                                                <td>Branch</td>
+                                                <td>Year</td>
+                                                <td>Name of the student</td>
+                                                <td>Mobile Number</td>
+                                                <td>SSLC Mark</td>
+                                                <td>Shelter Type</td>
+                                                <td>Native Place</td>
+                                                <td>Highest Qualification</td>
+                                                <td>Exam Reg NO</td>
+                                                <td>School name with Address</td>                                              
+                                                <td>Referral Name</td>
+                                                <td>Referral Contact</td>
+                                                <td>Referral Mode</td>
+                                                <td>Application date</td>
+                                                
+                                                <td>
+                                                     <div class="button-icon">
+                                                             <a href="adminstratoredit.html"><button type="button" class="btn btn-primary btn-xs">Edit <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button> </a>                                                             
+                                                          </div>
+                                              </td>
+                                              <td>
+                                                 <div class="button-icon">
+                                                            <a href="fee.html"> <button type="button" class="btn btn-primary btn-xs">fees <span ><i class="glyphicon glyphicon-pencil"></i></span>
+                                                           </button>     </a>                                                        
+                                                          </div>
+                                              </td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+
+
+    <script>
+
+function myFunction1() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+</script>
+
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <script src="./plugins/tables/js/jquery.dataTables.min.js"></script>
+    
+   
+
+</body>
+
+</html>
+<style type="text/css">
+    .brand-logo{
+        background-color: white;
+    }
+    input{
+        background-color: red;
+    }
+    .table-striped{
+        text-align: center;
+    }
+    .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>

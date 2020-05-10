@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sasurie index</title>
+    
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header" >
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
+                    <span class="logo-compact"></span>
+                    <span class="brand-title">
+                        <b><p>Sasurie Institutions</p></b>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                
+               <!-- <div class="header-right">
+                    <ul class="clearfix">
+                        
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
+                                            </a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Admission Module</li>
+                    
+                   
+                     <!-- <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                          <class="icon-globe-alt menu-icon"></i><span class="nav-text">Admission Module</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="applyleave.html">Students</a></li>
+                            <li><a href="leaverequest.html">Faculty</a></li>
+                            <li><a href="leavehistory.html">Adminstrator</a></li>
+                        </ul>
+                    </li>-->
+                   
+                    
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body" style="min-height: 600%">
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-validation">
+                                    <form class="form-valide" action="fee.html" method="post">
+                                        
+
+                                       <!--  <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-password">Education Qualification <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="form-group">
+                                            <label class="radio-inline mr-3">
+                                              <input type="radio" name="optradio"  onclick="sslc()" >SSlC Form </label>
+                                            <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio" onclick="diploma()" > Diploma </label>
+                                                 <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio" onclick="degree()" > Degree </label>
+                                           
+                                        </div>
+                                        </div>
+                                        <div id="demo"> </div>-->
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-username">College Name <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-username" name="val-username" placeholder="College Name">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Course <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" id="val-skill" name="val-skill">
+                                                    <option value="">Please select</option>
+                                                    <option value="html"></option>
+                                                    <option value="css">CSS</option>
+                                                    <option value="javascript">JavaScript</option>
+                                                    <option value="angular">Angular</option>
+                                                    <option value="angular">React</option>
+                                                    <option value="vuejs">Vue.js</option>
+                                                    <option value="ruby">Ruby</option>
+                                                    <option value="php">PHP</option>
+                                                    <option value="asp">ASP.NET</option>
+                                                    <option value="python">Python</option>
+                                                    <option value="mysql">MySQL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Branch <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" id="val-skill" name="val-skill">
+                                                    <option value="">Please select</option>
+                                                    <option value="cse">CSE</option>
+                                                    <option value="ece">ECE</option>
+                                                    <option value="eee">EEE</option>
+                                                    <option value="civil">Civil</option>
+                                                    <option value="mech">Mech</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Year <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" id="val-skill" name="val-skill">
+                                                    <option value="">Please select</option>
+                                                    <option value="I">I</option>
+                                                    <option value="II">II</option>
+                                                    <option value="III">III</option>
+                                                    <option value="IV">IV</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-email">Name of the student <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Name of the student">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                       <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-password">Gender <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="form-group">
+                                            <label class="radio-inline mr-3">
+                                              <input type="radio" name="optradio"> Male </label>
+                                            <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> Female </label>
+                                           
+                                        </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-confirm-password">Date of Birth<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Date of birth">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Community <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Community">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Caste <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Caste">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Religion <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Religion">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-currency">Father Name <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="Father  Name">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-website"> Father Contact Number <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Father Contact Number">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-currency">Guardian Name <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="Guardian Name">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-website">Guardian Contact Number <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Guardian Contact Number">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-currency">Spouse Name <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="Spouse Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-website">Spouse Contact Number <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-website" name="val-website" placeholder="spouse Contact Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Mother Name <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Mother name">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-website">Mother Contact Number <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Mother Contact Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-digits">Address <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-digits" name="val-digits" placeholder="address..">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-number"> Aadhar Number <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-number" name="val-number" placeholder="aadhar number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Mobile Number<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="mobile number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">S S L C Mark<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="sslc mark">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-password"> <span class="text-danger"></span>
+                                            </label>
+                                            <div class="form-group">
+                                            <label class="radio-inline mr-3">
+                                              <input type="radio" name="optradio"> Dayscholar </label>
+                                            <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> Hostel </label>
+                                           
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Native Place<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="native place">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-password"> Highest Qualification<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="form-group">
+                                            <label class="radio-inline mr-3">
+                                              <input type="radio" name="optradio"> HSC </label>
+                                            <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> SSLC </label>
+                                                 <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> Diploma </label>
+                                                 <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> Degree(UG) </label>
+                                                 <label class="radio-inline mr-3">
+                                                <input type="radio" name="optradio"> Degree(PG) </label>
+                                           
+                                        </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">SSLC Exam NO:<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="sslc exam number">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Medium of study<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="medium of study">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Month &Year of Passing<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="month & year of passing">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Admission Refernce<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Admission Reference">
+                                            </div>
+                                        </div>
+                                      <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-skill">Quota <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" id="val-skill" name="val-skill">
+                                                    <option value="">Please select</option>
+                                                    <option value="html"></option>
+                                                    <option value="css">Councling</option>
+                                                    <option value="javascript">management</option>
+                                                    <option value="angular">BC </option>
+                                                    <option value="angular">MBC</option>
+                                                    <option value="vuejs">OC</option>
+                                                   
+                                                </select>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Referral Name<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="referral name">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Referral Contact<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Referral Contact">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Total Fee<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Total fee">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Concession fee<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Concession fee">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Extra fee<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Extra fee">
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-range">Certificate Received<span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-range" name="val-range" placeholder="Certificate Received">
+                                            </div>
+                                        </div>
+                                       
+
+                                     
+                                        <div class="form-group row">
+                                            <div class="col-lg-8 ml-auto">
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+                    <script>
+                        
+                
+                  function sslc() {
+                  document.getElementById("demo").innerHTML = "<form class='form-valide' action='sslcform.html' method='post'><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-username'>Computer Science / Biology <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-username' name='val-username' placeholder='Computer Science / Biology '></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-email'>Physics / Economics <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Physics / Economics'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-password'>Chemistry / Commerce <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Chemistry / Commerce'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-confirm-password'>Mathematics / Accountancy <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-confirm-password' name='val-confirm-password' placeholder='Mathematics / Accountancy'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-suggestions'>English <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-confirm-password' name='val-confirm-password' placeholder='English'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-currency'>Tamil <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-currency' name='val-currency' placeholder='Tamil'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-website'>Total Marks <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-website' name='val-website' placeholder='Total Marks'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-phoneus'>Cut Off <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-phoneus' name='val-phoneus' placeholder='Cut Off'></div></div></form>";
+                }
+                 function diploma() {
+                  document.getElementById("demo").innerHTML = "<form class='form-valide' action='diplomaform.html' method='post'><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-username'>Subject  <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-username' name='val-username' placeholder='subject'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-email'>Total Marks <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Total Marks'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-password'>Percentage <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Percentage'></div></div></form>";
+                }
+                                  function degree() {
+                  document.getElementById("demo").innerHTML = "<form class='form-valide' action='diplomaform.html' method='post'><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-username'>Subject  <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-username' name='val-username' placeholder='subject'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-email'>Total Marks <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Total Marks'></div></div><div class='form-group row'><label class='col-lg-4 col-form-label' for='val-password'>Percentage <span class='text-danger'>*</span></label><div class='col-lg-6'><input type='text' class='form-control' id='val-email' name='val-email' placeholder='Percentage'></div></div></form>";
+              }
+                </script>
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./plugins/d3v3/index.js"></script>
+    <script src="./plugins/topojson/topojson.min.js"></script>
+    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
+
+<style type="text/css">
+    .brand-logo{
+        background-color: white;
+    }
+    
+    
+</style>
